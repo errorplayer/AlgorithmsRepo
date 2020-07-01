@@ -7,6 +7,6 @@
   #### SVM               
 
 + ### clustering        
-  #### kmeans++                           
+  #### [kmeans++](https://github.com/errorplayer/AlgorithmsRepo/blob/master/clustering/kmeans%2B%2B.ipynb)                           
 + ### string                    
   #### BM            
