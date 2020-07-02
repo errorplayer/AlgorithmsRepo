@@ -10,6 +10,7 @@
   #### [kmeans++](https://github.com/errorplayer/AlgorithmsRepo/blob/master/clustering/kmeans%2B%2B.ipynb)                           
 + ### string                    
   #### [BM](https://github.com/errorplayer/AlgorithmsRepo/blob/master/string/BM.py)  
+  #### [KMP](https://github.com/errorplayer/AlgorithmsRepo/blob/master/string/KMP.py)
   
 ## Reference
 ### [watermelon-lee/machine-learning-algorithms-implemented-by-python](https://github.com/watermelon-lee/machine-learning-algorithms-implemented-by-python)
