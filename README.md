@@ -19,6 +19,7 @@
 #### [OI Wiki](https://oi-wiki.org/) 致力于成为一个免费开放且持续更新的 编程竞赛知识整合站点
 #### [Jay Alammar](https://jalammar.github.io/) 用可视化的方式，通俗介绍经典模型：Visualizing machine learning one concept at a time
 #### [Lil'Log](https://lilianweng.github.io/lil-log/) 很不错的博客
+#### [bilibili视频资源](https://space.bilibili.com/273674001) 大佬的迷弟的粉丝
 
 
 ## Reference
