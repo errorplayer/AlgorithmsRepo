@@ -10,7 +10,10 @@
   #### [kmeans++](https://github.com/errorplayer/AlgorithmsRepo/blob/master/clustering/kmeans%2B%2B.ipynb)                           
 + ### string                    
   #### [BM](https://github.com/errorplayer/AlgorithmsRepo/blob/master/string/BM.py)  
-  #### [KMP](https://github.com/errorplayer/AlgorithmsRepo/blob/master/string/KMP.py)
+  #### [KMP](https://github.com/errorplayer/AlgorithmsRepo/blob/master/string/KMP.py)   
+    
++ ### Topic Model   
+  #### [LDA(Latent Dirichlet Allocation)](https://github.com/errorplayer/AlgorithmsRepo/blob/master/Topic_Model/LDAmodel.py)     
   
   
 ## Recommended Online Resource
@@ -20,6 +23,7 @@
 #### [Jay Alammar](https://jalammar.github.io/) 用可视化的方式，通俗介绍经典模型：Visualizing machine learning one concept at a time
 #### [Lil'Log](https://lilianweng.github.io/lil-log/) 很不错的博客
 #### [bilibili视频资源](https://space.bilibili.com/273674001) 大佬的迷弟的粉丝
+#### [Edwin Chen](http://blog.echen.me/)  
 
 
 ## Reference
