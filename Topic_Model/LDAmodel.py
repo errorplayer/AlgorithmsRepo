@@ -4,6 +4,25 @@ import random
 # reference
 # http://blog.echen.me/2011/08/22/introduction-to-latent-dirichlet-allocation/
 
+def doc2seglist(parag):
+  pre = 0
+  sep_ = '!?。？！'
+  stn_list = []
+  for idx, char in enumerate(parag):
+    if char in sep_:
+      stn_list.append(parag[pre:idx+1])
+      pre = idx+1
+  if len(stn_list) == 0:
+    return []
+  clean_ctn = [extract_chinese(ctn) for ctn in stn_list]
+  seg_list = [jieba.lcut(cle_ctn, cut_all=False) for cle_ctn in clean_ctn]
+  filtered_seg_list = filter_stopwords(seg_list)
+  total_seg = filtered_seg_list[0]
+  for idx, every_seg_list in enumerate(filtered_seg_list):
+    if idx != 0:
+      total_seg.extend(every_seg_list)
+  return total_seg
+
 class LDAmodel:
     def __init__(self, topic_num=10):
         self.topic_num = topic_num
