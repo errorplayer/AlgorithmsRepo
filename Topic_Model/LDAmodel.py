@@ -1,8 +1,33 @@
 import random
-
+import jieba
+import re
 
 # reference
 # http://blog.echen.me/2011/08/22/introduction-to-latent-dirichlet-allocation/
+
+# 创建停用词表
+def get_stopwords_list():
+  stopwords = [line.strip() for line in open(os.path.join(path_root, 'stopwords.txt'),encoding='UTF-8').readlines()]
+  return stopwords
+stopwords = get_stopwords_list()
+
+# 去除无用/无意义字符
+def extract_chinese(ctn):
+  ctn = str(ctn)
+  pattern = re.compile(r'[^\u4e00-\u9fa5]')
+  chinese = re.sub(pattern, '', ctn)
+  return chinese
+
+
+def filter_stopwords(stn_seg_list):
+  res_ = []
+  for stn_seg in stn_seg_list:
+    tmp_ = []
+    for word in stn_seg:
+      if word not in stopwords:
+        tmp_.append(word)
+    res_.append(tmp_)
+  return res_
 
 def doc2seglist(parag):
   pre = 0
